@@ -91,12 +91,12 @@ builder.Services.AddScoped<ExcelHelper>();
 builder.Services.AddScoped<MailHelper>();
 
 //Debugging
-builder.Services.AddScoped<IUrlHelper>((x =>
+/*builder.Services.AddScoped<IUrlHelper>((x =>
 {
     var actionContext = x.GetRequiredService<IActionContextAccessor>().ActionContext;
     var factory = x.GetRequiredService<IUrlHelperFactory>();
     return factory.GetUrlHelper(actionContext);
-}));
+}));*/
 
 
 builder.Services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();

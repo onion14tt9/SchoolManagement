@@ -16,17 +16,17 @@ namespace SchoolManagement.Services.Impl
         private readonly IUnitOfWork _unitOfWork;
         private readonly AuthHelper _authHelper;
         private readonly MailHelper _mailHelper;
-        private readonly IUrlHelper _urlHelper;
+        //private readonly IUrlHelper _urlHelper;
 
         public AuthService(IConfiguration configuration, IUnitOfWork unitOfWork, AuthHelper authHelper, MailHelper mailHelper
-            , IUrlHelper urlHelper
+            //, IUrlHelper urlHelper
             )
         {
             _configuration = configuration;
             _unitOfWork = unitOfWork;
             _authHelper = authHelper;
             _mailHelper = mailHelper;
-            _urlHelper = urlHelper;
+            //_urlHelper = urlHelper;
         }
         public async Task<TokenModel> Login(SignInDto request)
         {
@@ -57,8 +57,10 @@ namespace SchoolManagement.Services.Impl
 
             var email = new EmailDto();
             email.Subject = "[SM] Verification email of " + user.Name;
-            string confirmLink = _urlHelper.Action("VerifyConfirmForRegister", "Auth", new { email = user.Email }, _urlHelper.ActionContext.HttpContext.Request.Scheme);
-            email.Body = $"Please click the link below to confirm your email address:<br/>{confirmLink}<br/> ";//
+            //string confirmLink = _urlHelper.Action("VerifyConfirmForRegister", "Auth", new { email = user.Email }, _urlHelper.ActionContext.HttpContext.Request.Scheme);
+            email.Body = $"Please click the link below to confirm your email address:<br/>" +
+                //$"{confirmLink}<br/> " +
+                $"";
             email.To = user.Email;
             _mailHelper.SendEmail(email);
             return await _unitOfWork.UserRepository.AddEntity(user);

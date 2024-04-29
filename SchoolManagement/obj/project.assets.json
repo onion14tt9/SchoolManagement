@@ -6334,11 +6334,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\.NET demo\\SchoolManagement\\SchoolManagement\\SchoolManagement\\SchoolManagement.csproj",
+      "projectUniqueName": "D:\\.NET demo\\SchoolManage\\SchoolManagement\\SchoolManagement\\SchoolManagement.csproj",
       "projectName": "SchoolManagement",
-      "projectPath": "D:\\.NET demo\\SchoolManagement\\SchoolManagement\\SchoolManagement\\SchoolManagement.csproj",
+      "projectPath": "D:\\.NET demo\\SchoolManage\\SchoolManagement\\SchoolManagement\\SchoolManagement.csproj",
       "packagesPath": "C:\\Users\\PV\\.nuget\\packages\\",
-      "outputPath": "D:\\.NET demo\\SchoolManagement\\SchoolManagement\\SchoolManagement\\obj\\",
+      "outputPath": "D:\\.NET demo\\SchoolManage\\SchoolManagement\\SchoolManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PV\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6355,8 +6355,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\.NET demo\\SchoolManagement\\SchoolManagement\\SchoolManagement.Domain\\SchoolManagement.Domain.csproj": {
-              "projectPath": "D:\\.NET demo\\SchoolManagement\\SchoolManagement\\SchoolManagement.Domain\\SchoolManagement.Domain.csproj"
+            "D:\\.NET demo\\SchoolManage\\SchoolManagement\\SchoolManagement.Domain\\SchoolManagement.Domain.csproj": {
+              "projectPath": "D:\\.NET demo\\SchoolManage\\SchoolManagement\\SchoolManagement.Domain\\SchoolManagement.Domain.csproj"
             }
           }
         }
